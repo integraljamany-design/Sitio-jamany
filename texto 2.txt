@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integral JAMANY</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #1a1a1a;
+    }
+    .services ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .services li::before {
+      content: "✓ ";
+      color: green;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    form button {
+      background: #1a1a1a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>INTEGRAL JAMANY</h1>
+    <p>Construcciones, Acabados y Mantenimiento Integral</p>
+  </header>
+
+  <nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+      INTEGRAL JAMANY es una empresa orgullosamente mexicana fundada en 2018 con un equipo de profesionales dedicados al diseño de proyectos, construcción y mantenimiento. Con más de 7 años de experiencia en el ramo, contamos con una sólida infraestructura que garantiza nuestros trabajos.
+    </p>
+    <p>
+      Nos especializamos en mantenimiento industrial, mantenimiento residencial, estructuras metálicas y acabados especiales. Buscamos siempre un trato cálido y confiable, ofreciendo confianza, honestidad, seriedad y humanismo.
+    </p>
+  </section>
+
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Diseño de Proyectos</li>
+      <li>Construcción</li>
+      <li>Mantenimiento Industrial</li>
+      <li>Mantenimiento Residencial</li>
+      <li>Estructuras Metálicas</li>
+      <li>Acabados Especiales</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Proyectos</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Proyecto+1" alt="Proyecto 1" />
+      <img src="https://via.placeholder.com/300x200?text=Proyecto+2" alt="Proyecto 2" />
+      <img src="https://via.placeholder.com/300x200?text=Proyecto+3" alt="Proyecto 3" />
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="mailto:integral.jamany@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>📞 Teléfono: 5512913861</p>
+    <p>📧 Email: <a href="mailto:integral.jamany@gmail.com">integral.jamany@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 INTEGRAL JAMANY. Todos los derechos reservados.</p>
+  </footer>
+
+  <a
+    class="whatsapp-button"
+    href="https://wa.me/5215512913861"
+    target="_blank"
+    title="Chatea con nosotros"
+    >💬</a
+  >
+</body>
+</html>
